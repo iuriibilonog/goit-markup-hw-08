@@ -1,0 +1,26 @@
+// UTILS
+@import './utils/variables';
+@import './utils/vissually-hidden';
+
+// BASE
+@import './base/common';
+@import './base/container';
+
+// COMPONENTS
+@import './components/sections-title';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+@import './components/modal-btn';
+@import './components/social-links';
+@import './components/logo';
+
+// LAYOUT
+@import './layout/heder-page';
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/works';
+@import './layout/our-team';
+@import './layout/our-clients';
+@import './layout/footer';
+@import './layout/portfolio';
