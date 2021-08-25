@@ -18,7 +18,7 @@
 
 <body>
   <!--Header-->
-  <header>
+  <!-- <header>
     <div class="container page-header">
       <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a>
       <nav>
@@ -42,7 +42,7 @@
           </svg>+38 096 111 11 11</a></li>
       </ul>
     </div>
-  </header>
+  </header> -->
 
   
 
@@ -50,12 +50,12 @@
 
     
     <!--Hero-->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
       <h1 class="title">Эффективные решения для вашего бизнеса</h1>
       <button class="modal-btn" data-modal-open type="button"><span class="button-name">Заказать услугу</span></button>
       </div>
-    </section>
+    </section> -->
     
     <!--Наши преимущества-->
     <section class="benefits">
@@ -139,7 +139,15 @@
       <div class="container">
       <h2 class="sections-title">Наша команда</h2>
       <ul class="our-team__list">
-        <li class="our-team__item"><img src="./img/img.jpg" width="270" height="260"  alt="Сотрудник1">
+        <li class="our-team__item">
+          <picture>
+            
+            <source srcset="./img/our-team/person1-desktop.jpg" media="(min-width: 1200px)">
+            <source srcset="./img/our-team/person1-tablet.jpg" media="(min-width: 768px)">
+            <source srcset="./img/our-team/person1-mobile.jpg" media="(max-width: 767px)">
+            
+          <img src="#" alt="Сотрудник1">
+          </picture>
           <div class="our-team__desc">
           <h3 class="our-team__person-title">Игорь Демьяненко</h3>
           <p class="our-team__person-text">Product Designer</p>
@@ -167,7 +175,15 @@
           </ul>
           </div>
         </li>
-        <li class="our-team__item"><img src="./img/img1.jpg" width="270" height="260" alt="Сотрудник2">
+        <li class="our-team__item">
+          <picture>
+          
+            <source srcset="./img/our-team/person2-desktop.jpg" media="(min-width: 1200px)">
+            <source srcset="./img/our-team/person2-tablet.jpg" media="(min-width: 768px)">
+            <source srcset="./img/our-team/person2-mobile.jpg" media="(max-width: 767px)">
+          
+            <img src="#" alt="Сотрудник2">
+          </picture>
           <div class="our-team__desc">
           <h3 class="our-team__person-title">Ольга Репина</h3>
           <p class="our-team__person-text">Frontend Developer</p>
@@ -195,7 +211,15 @@
           </ul>
           </div>
         </li>
-        <li class="our-team__item"><img src="./img/img2.jpg" width="270" height="260" alt="Сотрудник3">
+        <li class="our-team__item">
+          <picture>
+          
+            <source srcset="./img/our-team/person3-desktop.jpg" media="(min-width: 1200px)">
+            <source srcset="./img/our-team/person3-tablet.jpg" media="(min-width: 768px)">
+            <source srcset="./img/our-team/person3-mobile.jpg" media="(max-width: 767px)">
+          
+            <img src="#" alt="Сотрудник3">
+          </picture>
           <div class="our-team__desc">
           <h3 class="our-team__person-title">Николай Тарасов</h3>
           <p class="our-team__person-text">Marketing</p>
@@ -223,7 +247,15 @@
           </ul>
           </div>
         </li>
-        <li class="our-team__item"><img src="./img/img3.jpg" width="270" height="260" alt="Сотрудник4">
+        <li class="our-team__item">
+          <picture>
+          
+            <source srcset="./img/our-team/person4-desktop.jpg" media="(min-width: 1200px)">
+            <source srcset="./img/our-team/person4-tablet.jpg" media="(min-width: 768px)">
+            <source srcset="./img/our-team/person4-mobile.jpg" media="(max-width: 767px)">
+          
+            <img src="#" alt="Сотрудник4">
+          </picture>
           <div class="our-team__desc">
           <h3 class="our-team__person-title">Михаил Ермаков</h3>
           <p class="our-team__person-text">UI Designer</p>
@@ -321,7 +353,7 @@
 
     <div class="connection">
       <h2 class="connection-title">Присоединяйтесь</h2>
-      <ul class="social-links">
+      <ul class="social-links footer-list">
         <li class="social-links__items"><a class="social-links__link footer-links" href="">
             <svg class="social-links__icon footer-icon">
               <use href="./img/sprite.svg#icon-instagram"></use>
@@ -372,7 +404,7 @@
   
   <!--Modal window-->
 
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
   <div class="modal-window">
     <button class="closed-button" data-modal-close type="button">
       <svg class="closed-btn-icon">
@@ -431,8 +463,8 @@
 
     </form>
   </div>
-  </div>
-<script src="./js/modal.js"></script>
+  </div> -->
+<!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>

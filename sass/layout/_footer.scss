@@ -5,6 +5,8 @@ footer {
 
   .logo-footer {
     color: var(--white-text-color);
+    display: block;
+    text-align: center;
   }
 
   .footer-address {
@@ -15,6 +17,7 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-bottom: 9px;
+    text-align: center;
   }
 
   .footer-contacts {
@@ -37,11 +40,6 @@ footer {
   }
 }
 
-.footer {
-  display: flex;
-  align-items: baseline;
-}
-
 address {
   margin-top: 20px;
 }
@@ -50,14 +48,17 @@ address {
   & li:first-child {
     margin-bottom: 9px;
   }
+  text-align: center;
 }
 
 .footer-info {
   max-width: 231px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .connection {
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .connection-title {
@@ -67,6 +68,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 }
 
 .footer-icon {
@@ -75,12 +77,13 @@ address {
   fill: var(--white-text-color);
 }
 
-.footer-links {
-  background-color: rgba(255, 255, 255, 0.1);
+.social-links.footer-list {
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.subscribe {
-  margin-left: 93px;
+.footer-links {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .subscribe-title {
@@ -91,15 +94,15 @@ address {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .mail-form {
-  display: flex;
+  text-align: center;
 }
 
 .mail-form-input {
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,11 +110,13 @@ address {
   border-radius: 4px;
   padding-left: 16px;
   color: var(--white-text-color);
+  margin-bottom: 20px;
 }
 
 .subscribe-form-batton {
   position: relative;
   display: flex;
+  margin: 0 auto;
   align-items: center;
   padding-left: 29px;
 }
@@ -121,4 +126,51 @@ address {
   top: 50%;
   right: 28px;
   transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .footer-info {
+    margin: 0 165px 0 0;
+  }
+
+  .subscribe {
+    margin-top: 60px;
+  }
+
+  .mail-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-form-input {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
+
+  .mail-form {
+    display: flex;
+  }
+
+  .footer-info {
+    margin: 0 70px 0 0;
+  }
+
+  .subscribe {
+    margin: 0 0 0 93px;
+  }
+
+  .logo.logo-footer,
+  .footer-address-list,
+  .subscribe-title,
+  .connection-title {
+    text-align: start;
+  }
 }
