@@ -81,7 +81,7 @@
 
 .checkbox-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -172,4 +172,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

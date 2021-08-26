@@ -1,7 +1,9 @@
 .modal-window {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 96vw;
+  max-width: 450px;
+  height: 96vh;
+  height: 609px;
   background-color: var(--white-text-color);
   top: 50%;
   left: 50%;
@@ -33,5 +35,12 @@
 
   .closed-button:hover & {
     fill: var(--accent-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    max-width: 528px;
+    max-height: 581px;
   }
 }
