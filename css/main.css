@@ -456,11 +456,17 @@ a {
     width: 100vw;
     height: 100vh;
     transform: translateX(100%);
-    transition: 500ms linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 500ms linear, opacity 500ms linear, visibility 500ms linear;
   }
   .mob-menu.is-open {
     transform: translateX(0);
-    transition: 500ms linear;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform 500ms linear, opacity 500ms linear, visibility 500ms linear;
   }
   .mob-menu__social {
     display: flex;
@@ -477,6 +483,9 @@ a {
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+  }
+  .navigation__link_active {
+    color: var(--accent-text-color);
   }
   .mob-contacts__link-phone {
     display: block;
