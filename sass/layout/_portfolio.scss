@@ -136,7 +136,6 @@
 }
 
 .projects-link {
-  display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -167,6 +166,19 @@
     margin-left: 30px;
     width: calc((100% - 60px) / 2);
     background-color: var(--white-text-color);
+  }
+
+  .projects-link-thumb {
+    flex-shrink: 0;
+  }
+
+  .projects-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .projects-list-desc {
+    height: 100%;
   }
 }
 
