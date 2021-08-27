@@ -6,6 +6,10 @@
   padding-bottom: 16px;
 }
 
+header {
+  border-bottom: 1px solid var(--cards-shadow-color);
+}
+
 @media screen and (max-width: 767px) {
   .navigation {
     display: none;
@@ -261,9 +265,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  header {
-    border-bottom: 1px solid var(--cards-shadow-color);
-  }
   .contacts {
     display: flex;
     margin-left: auto;
